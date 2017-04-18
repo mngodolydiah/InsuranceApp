@@ -38,7 +38,7 @@ public class ListAdapter extends ArrayAdapter<String> {
         ListViewItems.setText(ListItemsName[position]);
         ListViewImage.setImageResource(ImageName[position]);
         return ListViewSingle;
+    }
 
-    };
 
 }

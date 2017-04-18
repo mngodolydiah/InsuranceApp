@@ -7,4 +7,9 @@
     <string name="action_settings">Settings</string>
     <string name="android_studio">Android Studio</string>
     <string name="android_studio_android_com">android.studio@android.com</string>
+    <string name="title_activity_private_insurance">PrivateInsurance</string>
+    <string name="privateCarInsurance">Private Car Insurance</string>
+    <string name="privateMotorcycleInsurance">Private Motorcycle Insurance</string>
+    <string name="personalAccidentInsurance">Personal Accident Insurance</string>
+    <string name="travelInsurance">Travel Insurance</string>
 </resources>
