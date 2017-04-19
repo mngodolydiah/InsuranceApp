@@ -19,6 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ListItems" />
+        <activity android:name=".PrivateInsurance"></activity>
     </application>
 
 </manifest>
