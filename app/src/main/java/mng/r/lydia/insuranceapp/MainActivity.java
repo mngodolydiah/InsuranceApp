@@ -42,6 +42,9 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(getApplicationContext(), ListItemsName[position], Toast.LENGTH_LONG).show();
+                if(ListItemsName[position] == "Private Insurance"){
+                    startActivity(new Intent(MainActivity.this, PrivateInsurance.class));
+                }
             }
         });
 
@@ -96,7 +99,7 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_my_profile) {
             // Handle the camera action
         } else if (id == R.id.nav_private_insurance) {
-
+            startActivity(new Intent(this, PrivateInsurance.class));
         } else if (id == R.id.nav_claims) {
 
         } else if (id == R.id.nav_my_documents) {
