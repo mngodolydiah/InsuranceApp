@@ -10,7 +10,7 @@ import android.widget.Toast;
 public class PrivateInsurance extends AppCompatActivity {
 
     String[] privateInsuranceList={"Private Car Insurance", "Private Motorcycle Insurance", "Personal Accident Insurance", "Travel Insurance"};
-    Integer[] privateInsuranceImages= {R.drawable.private_car_insurance_icon, R.drawable.travel_insurance_icon, R.drawable.private_motorcycle_insurance_icon, R.drawable.personal_accident_insurance_icon};
+    Integer[] privateInsuranceImages= {R.drawable.private_car_insurance_icon, R.drawable.private_motorcycle_insurance_icon, R.drawable.personal_accident_insurance_icon, R.drawable.travel_insurance_icon};
     ListView privateListView;
     ListAdapter privateListAdapter;
 
