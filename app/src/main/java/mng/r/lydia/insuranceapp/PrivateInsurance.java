@@ -1,8 +1,8 @@
 package mng.r.lydia.insuranceapp;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -28,8 +28,15 @@ public class PrivateInsurance extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(getApplicationContext(), privateInsuranceList[position], Toast.LENGTH_LONG).show();
+
                 if(privateInsuranceList[position] == "Private Car Insurance"){
-                    startActivity(new Intent(PrivateInsurance.this, CompanyList.class));
+                    startActivity(new Intent(PrivateInsurance.this, CompanyListPrivateCar.class));
+                }else if(privateInsuranceList[position] == "Private Motorcycle Insurance"){
+                    startActivity(new Intent(PrivateInsurance.this, CompanyListMotorcycle.class));
+                }else if(privateInsuranceList[position] == "Personal Accident Insurance"){
+                    startActivity(new Intent(PrivateInsurance.this,CompanyListPersonalAccident.class));
+                }else if(privateInsuranceList[position] == "Travel Insurance"){
+                    startActivity(new Intent(PrivateInsurance.this, CompanyListTravel.class));
                 }
             }
         });
