@@ -12,11 +12,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ExpandableListView;
 import android.widget.ListView;
 import android.widget.Toast;
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -33,6 +30,7 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+<<<<<<< HEAD
         //THE EXPANDABLE
         ExpandableListView elv = (ExpandableListView) findViewById(R.id.expanded_menu);
         final ArrayList<CompanyList> company = this.getData();
@@ -50,9 +48,13 @@ public class MainActivity extends AppCompatActivity
                 return false;
             }
         });
+=======
+        //ADD AND GET DATA
+>>>>>>> 2c72091b65494d9db5dce88110ec2f5c3c829f3a
 
         //ADD AND GET DATA
 
+<<<<<<< HEAD
 //        listView = (ListView)findViewById(R.id.HomeList);
 //
 //        listAdapter = new ListAdapter(MainActivity.this ,ListItemsName, ImageName);
@@ -68,6 +70,21 @@ public class MainActivity extends AppCompatActivity
 //                }
 //            }
 //        });
+=======
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(getApplicationContext(), ListItemsName[position], Toast.LENGTH_LONG).show();
+                if(ListItemsName[position] == "Private Insurance"){
+                    startActivity(new Intent(MainActivity.this, PrivateInsurance.class));
+                }else if(ListItemsName[position] == "Claim"){
+                    startActivity(new Intent(MainActivity.this, ClaimsCategories.class));
+                }else if(ListItemsName[position] == "My Documents"){
+                    startActivity(new Intent(MainActivity.this, Documents.class));
+                }
+            }
+        });
+>>>>>>> 2c72091b65494d9db5dce88110ec2f5c3c829f3a
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -134,6 +151,7 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+<<<<<<< HEAD
     public ArrayList<CompanyList> getData()
     {
         CompanyList t1 = new CompanyList("Company 1");
@@ -159,5 +177,8 @@ public class MainActivity extends AppCompatActivity
 
         return allTeams;
     }
+=======
+
+>>>>>>> 2c72091b65494d9db5dce88110ec2f5c3c829f3a
 
 }

@@ -20,6 +20,33 @@
         </activity>
         <activity android:name=".ListItems" />
         <activity android:name=".PrivateInsurance" />
+<<<<<<< HEAD
+=======
+        <activity android:name=".CompanyListPrivateCar" />
+        <activity android:name=".CategoriesPrivateCar" />
+        <activity android:name=".ThirdPartyOnlyCompanyA" />
+        <activity android:name=".ThirdPartyFireandTheftCompanyA" />
+        <activity android:name=".ComprehensiveInsuranceComapnyA" />
+        <activity android:name=".CategoriesforPrivateMotorcycle" />
+        <activity android:name=".PersonalAccidentInsuranceCompanyA" />
+        <activity android:name=".TravelInsuranceCompanyA" />
+        <activity android:name=".CompanyListMotorcycle" />
+        <activity android:name=".CompanyListPersonalAccident" />
+        <activity android:name=".CompanyListTravel" />
+        <activity android:name=".ClaimsCategories" />
+        <activity android:name=".Documents" />
+        <activity android:name=".PersonalAccidentPage" />
+        <activity android:name=".TravelInsurancePage" />
+        <activity android:name=".ClaimsCompanyListPrivateCar" />
+        <activity android:name=".ClaimsCompanyListMotorcyle" />
+        <activity android:name=".ClaimsCompanyListCommericial" />
+        <activity android:name=".ClaimsCompanyListTheft" />
+        <activity android:name=".ClaimsCompanyListWindscreen" />
+        <activity android:name=".ClaimsCompanyCarEntertainment" />
+        <activity android:name=".ClaimsCompanyListPersonalAccident" />
+        <activity android:name=".ClaimsCompanyListTravel" />
+        <activity android:name=".ClaimsCompanyListMarine"></activity>
+>>>>>>> 2c72091b65494d9db5dce88110ec2f5c3c829f3a
     </application>
 
 </manifest>
