@@ -95,7 +95,7 @@ public Context c;
     public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
         if(convertView==null)
         {
-            convertView=inflater.inflate(R.layout.child_list,null);
+            convertView=inflater.inflate(R.layout.child_list, null);
         }
 
         String child=(String) getChild(groupPosition,childPosition);

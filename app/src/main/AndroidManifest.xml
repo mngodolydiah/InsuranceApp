@@ -20,7 +20,6 @@
         </activity>
         <activity android:name=".ListItems" />
         <activity android:name=".PrivateInsurance" />
-        <activity android:name=".CompanyList"/>
     </application>
 
 </manifest>
