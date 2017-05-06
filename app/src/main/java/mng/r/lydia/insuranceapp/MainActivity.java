@@ -18,8 +18,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    String[] ListItemsName={"Profile/Account", "Private Insurance", "Claim", "My Documents"};
-    Integer[] ImageName= {R.drawable.profile_icon, R.drawable.private_insurance_icon, R.drawable.claim_icon, R.drawable.document_icon};
+    String[] ListItemsName = {"Profile/Account", "Private Insurance", "Claim", "My Documents"};
+    Integer[] ImageName = {R.drawable.profile_icon, R.drawable.private_insurance_icon, R.drawable.claim_icon, R.drawable.document_icon};
     ListView listView;
     ListAdapter listAdapter;
 
@@ -30,61 +30,36 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-<<<<<<< HEAD
-        //THE EXPANDABLE
-        ExpandableListView elv = (ExpandableListView) findViewById(R.id.expanded_menu);
-        final ArrayList<CompanyList> company = this.getData();
+        listView = (ListView)findViewById(R.id.HomeList);
 
-        //CREATE AND BIND TO ADAPTER
-        CustomAdapter adapter = new CustomAdapter(MainActivity.this, company);
-        elv.setAdapter(adapter);
+        listAdapter = new ListAdapter(MainActivity.this ,ListItemsName, ImageName);
 
-        //SET ONCLICK LISTENER
-        elv.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
-            @Override
-            public boolean onChildClick(ExpandableListView parent, View v, int groupPosition,
-                                        int childPosition, long id) {
-                Toast.makeText(getApplicationContext(), company.get(groupPosition).categories.get(childPosition), Toast.LENGTH_SHORT).show();
-                return false;
-            }
-        });
-=======
-        //ADD AND GET DATA
->>>>>>> 2c72091b65494d9db5dce88110ec2f5c3c829f3a
+        listView.setAdapter(listAdapter);
 
-        //ADD AND GET DATA
-
-<<<<<<< HEAD
-//        listView = (ListView)findViewById(R.id.HomeList);
-//
-//        listAdapter = new ListAdapter(MainActivity.this ,ListItemsName, ImageName);
-//
-//        listView.setAdapter(listAdapter);
-//
-//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                Toast.makeText(getApplicationContext(), ListItemsName[position], Toast.LENGTH_LONG).show();
-//                if(ListItemsName[position] == "Private Insurance"){
-//                    startActivity(new Intent(MainActivity.this, PrivateInsurance.class));
-//                }
-//            }
-//        });
-=======
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(getApplicationContext(), ListItemsName[position], Toast.LENGTH_LONG).show();
                 if(ListItemsName[position] == "Private Insurance"){
                     startActivity(new Intent(MainActivity.this, PrivateInsurance.class));
-                }else if(ListItemsName[position] == "Claim"){
+                }
+            }
+        });
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(getApplicationContext(), ListItemsName[position], Toast.LENGTH_LONG).show();
+                if (ListItemsName[position] == "Private Insurance") {
+                    startActivity(new Intent(MainActivity.this, PrivateInsurance.class));
+                } else if (ListItemsName[position] == "Claim") {
                     startActivity(new Intent(MainActivity.this, ClaimsCategories.class));
-                }else if(ListItemsName[position] == "My Documents"){
+                } else if (ListItemsName[position] == "My Documents") {
                     startActivity(new Intent(MainActivity.this, Documents.class));
                 }
             }
         });
->>>>>>> 2c72091b65494d9db5dce88110ec2f5c3c829f3a
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -150,35 +125,4 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-
-<<<<<<< HEAD
-    public ArrayList<CompanyList> getData()
-    {
-        CompanyList t1 = new CompanyList("Company 1");
-        t1.categories.add("Third Party Only");
-        t1.categories.add("Third Party Fire and Insurance");
-        t1.categories.add("Comprehensive Insurance ");
-
-        CompanyList t2 = new CompanyList("Company 2");
-        t1.categories.add("Third Party Only");
-        t1.categories.add("Third Party Fire and Insurance");
-        t1.categories.add("Comprehensive Insurance ");
-
-        CompanyList t3 = new CompanyList("Company 3");
-        t1.categories.add("Third Party Only");
-        t1.categories.add("Third Party Fire and Insurance");
-        t1.categories.add("Comprehensive Insurance ");
-
-        ArrayList<CompanyList> allTeams = new ArrayList<CompanyList>();
-
-        allTeams.add(t1);
-        allTeams.add(t2);
-        allTeams.add(t3);
-
-        return allTeams;
-    }
-=======
-
->>>>>>> 2c72091b65494d9db5dce88110ec2f5c3c829f3a
-
 }

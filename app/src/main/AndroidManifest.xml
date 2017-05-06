@@ -20,8 +20,6 @@
         </activity>
         <activity android:name=".ListItems" />
         <activity android:name=".PrivateInsurance" />
-<<<<<<< HEAD
-=======
         <activity android:name=".CompanyListPrivateCar" />
         <activity android:name=".CategoriesPrivateCar" />
         <activity android:name=".ThirdPartyOnlyCompanyA" />
@@ -46,7 +44,6 @@
         <activity android:name=".ClaimsCompanyListPersonalAccident" />
         <activity android:name=".ClaimsCompanyListTravel" />
         <activity android:name=".ClaimsCompanyListMarine"></activity>
->>>>>>> 2c72091b65494d9db5dce88110ec2f5c3c829f3a
     </application>
 
 </manifest>
