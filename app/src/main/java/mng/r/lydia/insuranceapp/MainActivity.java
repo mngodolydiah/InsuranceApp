@@ -115,11 +115,11 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_my_profile) {
             // Handle the camera action
         } else if (id == R.id.nav_private_insurance) {
-            startActivity(new Intent(this, PrivateInsurance.class));
+            startActivity(new Intent(MainActivity.this, PrivateInsurance.class));
         } else if (id == R.id.nav_claims) {
-
+            startActivity(new Intent(MainActivity.this, ClaimsCategories.class));
         } else if (id == R.id.nav_my_documents) {
-
+            startActivity(new Intent(MainActivity.this, Documents.class));
         } else if (id == R.id.nav_share_this_app) {
 shareIntent= new Intent(android.content.Intent.ACTION_SEND);
             shareIntent.setType("text/plain");
