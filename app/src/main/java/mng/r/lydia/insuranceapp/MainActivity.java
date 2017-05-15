@@ -22,6 +22,9 @@ public class MainActivity extends AppCompatActivity
     Integer[] ImageName = {R.drawable.profile_icon, R.drawable.private_insurance_icon, R.drawable.claim_icon, R.drawable.document_icon};
     ListView listView;
     ListAdapter listAdapter;
+    Intent shareIntent;
+    String shareBody = "Try the new Insurance App!!";
+    String shareSubject = "INSURANCE APP";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -118,7 +121,11 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_my_documents) {
 
         } else if (id == R.id.nav_share_this_app) {
-
+shareIntent= new Intent(android.content.Intent.ACTION_SEND);
+            shareIntent.setType("text/plain");
+            shareIntent.putExtra(Intent.EXTRA_SUBJECT,shareSubject);
+            shareIntent.putExtra(Intent.EXTRA_TEXT,shareBody);
+            startActivity(Intent.createChooser(shareIntent,"Share via"));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
