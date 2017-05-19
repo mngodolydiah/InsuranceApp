@@ -4,7 +4,8 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_my_profile"
-            android:title="My Profile Account"/>
+            android:title="My Profile Account"
+            android:icon="@drawable/profile_icon"/>
         <item
             android:id="@+id/nav_private_insurance"
             android:title="Private Insurance"
