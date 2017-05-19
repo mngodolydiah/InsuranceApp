@@ -123,8 +123,8 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_share_this_app) {
 shareIntent= new Intent(android.content.Intent.ACTION_SEND);
             shareIntent.setType("text/plain");
-            shareIntent.putExtra(Intent.EXTRA_SUBJECT,shareSubject);
-            shareIntent.putExtra(Intent.EXTRA_TEXT,shareBody);
+            shareIntent.putExtra(android.content.Intent.EXTRA_SUBJECT,shareSubject);
+            shareIntent.putExtra(android.content.Intent.EXTRA_TEXT,shareBody);
             startActivity(Intent.createChooser(shareIntent,"Share via"));
         }
 
