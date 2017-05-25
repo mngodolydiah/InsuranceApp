@@ -11,7 +11,7 @@ import android.widget.Toast;
 public class CategoriesforPrivateMotorcycle extends AppCompatActivity {
 
     String[] privateMotorcyleList={"Third Party Only", "Comprehensive Insurance"};
-    Integer[] privateMotorcyleImages= {R.drawable.private_insurance_icon, R.drawable.private_insurance_icon};
+    Integer[] privateMotorcyleImages= {R.drawable.motor_cycle_insurance_third_party, R.drawable.motor_cycle_insurance_comprehensive};
     ListView privateMotorcyleListView;
     ListAdapter privateMotorcyleListAdapter;
 

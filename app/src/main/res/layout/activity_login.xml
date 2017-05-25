@@ -1,50 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/relativeLayout"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="160dp"
     tools:context="mng.r.lydia.insuranceapp.LoginActivity">
 
     <EditText
         android:id="@+id/loginEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
         android:inputType="textEmailAddress"
-        android:hint="youremail@email.com"
-        android:textAlignment="center" />
+        android:hint="my@email.com"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        android:layout_gravity="center_vertical"
+        />
 
     <EditText
         android:id="@+id/loginPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/loginEmail"
-        android:layout_marginTop="45dp"
         android:inputType="textPassword"
-        android:hint="Your Password"
-        android:textAlignment="center" />
+        android:hint="My Password"
+        android:layout_margin="20dp"
+        android:textAlignment="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
 
-    <Button
-        android:id="@+id/signIn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
-        android:text="Sign In"
-        android:layout_below="@+id/loginPassword"
-        android:layout_centerHorizontal="true"
-        android:background="?android:attr/selectableItemBackground"
-        android:onClick="checkLogin"/>
+        <Button
+            android:id="@+id/signIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Sign In"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="checkLogin"/>
 
-    <Button
-        android:id="@+id/signUp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
-        android:text="Sign Up"
-        android:layout_below="@+id/signIn"
-        android:layout_alignLeft="@+id/signIn"
-        android:layout_alignStart="@+id/signIn"
-        android:background="?android:attr/selectableItemBackground"/>
-</RelativeLayout>
+        <Button
+            android:id="@+id/signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Sign Up"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="signUp"/>
+    </LinearLayout>
+</LinearLayout>

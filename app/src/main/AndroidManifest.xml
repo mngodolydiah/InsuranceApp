@@ -10,8 +10,9 @@
         android:theme="@style/AppTheme">
         <activity android:name=".LoginActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
@@ -41,6 +42,7 @@
         <activity android:name=".ClaimsCompanyListPersonalAccident" />
         <activity android:name=".ClaimsCompanyListTravel" />
         <activity android:name=".ClaimsCompanyListMarine" />
+        <activity android:name=".SignUp"></activity>
     </application>
 
 </manifest>

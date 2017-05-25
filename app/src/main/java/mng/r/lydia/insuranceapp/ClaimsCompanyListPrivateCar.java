@@ -9,8 +9,8 @@ import android.widget.Toast;
 
 public class ClaimsCompanyListPrivateCar extends AppCompatActivity {
 
-    String[] ClaimsList={"Company A", "Company B", "Company C","Company D","Company E"};
-    Integer[] ClaimsImages= {R.drawable.claim_icon, R.drawable.claim_icon, R.drawable.claim_icon, R.drawable.claim_icon, R.drawable.claim_icon,};
+    String[] ClaimsList={"Company A", "Company B"};
+    Integer[] ClaimsImages= {R.drawable.claim_icon, R.drawable.claim_icon};
     ListView ClaimsListView;
     ListAdapter claimsListAdapter;
 
