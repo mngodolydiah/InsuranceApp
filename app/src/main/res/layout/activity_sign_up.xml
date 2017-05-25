@@ -1,42 +1,176 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="mng.r.lydia.insuranceapp.SignUp"
-    android:orientation="vertical"
-    android:layout_marginTop="100dp">
-
-
+    android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp">
-        <EditText
+        android:layout_height="match_parent"
+        tools:context="mng.r.lydia.insuranceapp.SignUp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Type"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:background="#808080"
+            android:textColor="#ffffff"/>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:hint="First Name"
-            android:layout_weight="1"/>
+            android:orientation="vertical">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Individual"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
 
-        <EditText
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Company"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Information"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:background="#808080"
+            android:textColor="#ffffff"/>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="First Name"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="Last Name"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:hint="Telephone/ Mobile"
+                    android:textAlignment="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPostalAddress"
+                    android:hint="Postal Address"
+                    android:textAlignment="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Occupation/ Nature Of Business"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:layout_margin="5dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="National Id/ Passport Number"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:layout_margin="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="KRA PIN"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upload"
+                    android:layout_weight="3"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:background="?android:attr/selectableItemBackground"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terms And  Condiitons"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:background="#808080"
+                    android:textColor="#ffffff"/>
+                <TextView
+                    android:text="@string/tnc"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textColor = "#ffffff"
+                    android:padding="5dp"
+                    android:textSize="10sp"
+                    android:background="@color/colorPrimary"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Accept?"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+        </ScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login Credentials"
             android:layout_margin="5dp"
-            android:hint="Last Name"
-            android:layout_weight="1"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp">
+            android:padding="5dp"
+            android:background="#808080"
+            android:textColor="#ffffff"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -60,17 +194,18 @@
             android:textAlignment="center"
             android:inputType="textPassword"
             android:hint="Confirm Password"/>
+
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textAlignment="center"
+                android:layout_margin="20dp"
+                android:padding="5dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_gravity="center_horizontal"/>
+
     </LinearLayout>
-
-
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sign Up"
-            android:textAlignment="center"
-            android:layout_margin="20dp"
-            android:background="?android:attr/selectableItemBackground"
-            android:layout_gravity="center_horizontal"/>
-
-</LinearLayout>
+</ScrollView>
