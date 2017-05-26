@@ -42,7 +42,8 @@
         <activity android:name=".ClaimsCompanyListPersonalAccident" />
         <activity android:name=".ClaimsCompanyListTravel" />
         <activity android:name=".ClaimsCompanyListMarine" />
-        <activity android:name=".SignUp"></activity>
+        <activity android:name=".SignUp" />
+        <activity android:name=".Profile"></activity>
     </application>
 
 </manifest>
