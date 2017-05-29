@@ -81,7 +81,7 @@
         android:textAlignment="center"
         android:layout_margin="20dp"
         android:padding="5dp"
-        android:background="@drawable/edit"
+        android:background="@drawable/tick_icon"
         android:layout_gravity="right"/>
 
 </LinearLayout>
