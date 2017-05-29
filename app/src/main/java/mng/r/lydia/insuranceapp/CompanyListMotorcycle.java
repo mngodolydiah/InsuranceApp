@@ -10,8 +10,8 @@ import android.widget.Toast;
 
 public class CompanyListMotorcycle extends AppCompatActivity {
 
-    String[] companyList={"Company A", "CompanyB", "Company C", "Company D", "Company E"};
-    Integer[] companyImages= {R.drawable.private_insurance_icon, R.drawable.private_insurance_icon, R.drawable.private_insurance_icon, R.drawable.private_insurance_icon,R.drawable.private_insurance_icon};
+    String[] companyList={"Company A", "Company B"};
+    Integer[] companyImages= {R.drawable.company_a, R.drawable.company_b};
     ListView companyListView;
     ListAdapter companyListAdapter;
 

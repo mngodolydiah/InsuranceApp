@@ -62,6 +62,8 @@ public class MainActivity extends AppCompatActivity
                     startActivity(new Intent(MainActivity.this, ClaimsCategories.class));
                 } else if (ListItemsName[position] == "My Documents") {
                     startActivity(new Intent(MainActivity.this, Documents.class));
+                } else if (ListItemsName[position] == "Profile/Account"){
+                    startActivity(new Intent(MainActivity.this, Profile.class));
                 }
             }
         });
@@ -113,7 +115,7 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_my_profile) {
-            // Handle the camera action
+            startActivity(new Intent(MainActivity.this, Profile.class));
         } else if (id == R.id.nav_private_insurance) {
             startActivity(new Intent(MainActivity.this, PrivateInsurance.class));
         } else if (id == R.id.nav_claims) {

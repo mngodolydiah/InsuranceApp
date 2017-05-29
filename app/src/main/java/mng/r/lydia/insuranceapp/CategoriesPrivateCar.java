@@ -11,7 +11,7 @@ import android.widget.Toast;
 public class CategoriesPrivateCar extends AppCompatActivity {
 
     String[] privateCarInsuranceList={"Third Party Only", "Third Party Fire and Theft Insurance", "Comprehensive Insurance"};
-    Integer[] privateCarInsuranceImages= {R.drawable.private_insurance_icon, R.drawable.private_insurance_icon, R.drawable.private_insurance_icon};
+    Integer[] privateCarInsuranceImages= {R.drawable.private_car_third_party, R.drawable.private_car_fire_and_theft, R.drawable.private_car_comprehensive};
     ListView privateCarListView;
     ListAdapter privateCarListAdapter;
 
