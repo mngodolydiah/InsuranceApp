@@ -1,5 +1,6 @@
 package mng.r.lydia.insuranceapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -27,6 +28,7 @@ public class ClaimsCompanyListTravel extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(getApplicationContext(), ClaimsList[position], Toast.LENGTH_LONG).show();
+                startActivity(new Intent(ClaimsCompanyListTravel.this,TravelInsurancePage.class));
             }
         });
 
