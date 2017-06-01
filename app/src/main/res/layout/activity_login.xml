@@ -28,32 +28,24 @@
         android:hint="My Password"
         android:layout_margin="5dp"
         android:textAlignment="center"/>
-    <LinearLayout
+
+    <Button
+        android:id="@+id/signIn"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        >
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="5dp"
+        android:text="Sign In"
+        android:background="?android:attr/selectableItemBackground"
+        android:onClick="checkLogin"/>
 
-        <Button
-            android:id="@+id/signIn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:padding="5dp"
-            android:text="Sign In"
-            android:layout_weight="1"
-            android:background="?android:attr/selectableItemBackground"
-            android:onClick="checkLogin"/>
-
-        <Button
-            android:id="@+id/signUp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:padding="5dp"
-            android:text="Sign Up"
-            android:layout_weight="1"
-            android:background="?android:attr/selectableItemBackground"
-            android:onClick="signUp"/>
-    </LinearLayout>
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="5dp"
+        android:text="Sign Up"
+        android:background="?android:attr/selectableItemBackground"
+        android:onClick="signUp"/>
 </LinearLayout>
