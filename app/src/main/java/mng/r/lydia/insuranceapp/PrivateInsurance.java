@@ -10,8 +10,8 @@ import android.widget.Toast;
 
 public class PrivateInsurance extends AppCompatActivity {
 
-    String[] privateInsuranceList={"Private Car Insurance", "Private Motorcycle Insurance", "Personal Accident Insurance", "Travel Insurance"};
-    Integer[] privateInsuranceImages= {R.drawable.private_car_insurance_icon, R.drawable.private_motorcycle_insurance_icon, R.drawable.personal_accident_insurance_icon, R.drawable.travel_insurance_icon};
+    String[] privateInsuranceList={"Private Car Insurance", "Private Motorcycle Insurance"};
+    Integer[] privateInsuranceImages= {R.drawable.private_car_insurance_icon, R.drawable.private_motorcycle_insurance_icon};
     ListView privateListView;
     ListAdapter privateListAdapter;
 
@@ -33,10 +33,6 @@ public class PrivateInsurance extends AppCompatActivity {
                     startActivity(new Intent(PrivateInsurance.this, CompanyListPrivateCar.class));
                 }else if(privateInsuranceList[position] == "Private Motorcycle Insurance"){
                     startActivity(new Intent(PrivateInsurance.this, CompanyListMotorcycle.class));
-                }else if(privateInsuranceList[position] == "Personal Accident Insurance"){
-                    startActivity(new Intent(PrivateInsurance.this,CompanyListPersonalAccident.class));
-                }else if(privateInsuranceList[position] == "Travel Insurance"){
-                    startActivity(new Intent(PrivateInsurance.this, CompanyListTravel.class));
                 }
             }
         });

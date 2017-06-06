@@ -12,8 +12,10 @@ public class Profile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        profileImage = (ImageButton) findViewById(R.id.profileImage);
+    }
 
-        profileImage.setBackgroundResource(R.drawable.profile_icon);
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
     }
 }

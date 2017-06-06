@@ -10,8 +10,8 @@ import android.widget.Toast;
 
 public class CategoriesPrivateCar extends AppCompatActivity {
 
-    String[] privateCarInsuranceList={"Third Party Only", "Third Party Fire and Theft Insurance", "Comprehensive Insurance"};
-    Integer[] privateCarInsuranceImages= {R.drawable.private_car_third_party, R.drawable.private_car_fire_and_theft, R.drawable.private_car_comprehensive};
+    String[] privateCarInsuranceList = {"Third Party Only", "Comprehensive Insurance"};
+    Integer[] privateCarInsuranceImages = {R.drawable.private_car_third_party, R.drawable.private_car_comprehensive};
     ListView privateCarListView;
     ListAdapter privateCarListAdapter;
 
@@ -29,11 +29,9 @@ public class CategoriesPrivateCar extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(getApplicationContext(), privateCarInsuranceList[position], Toast.LENGTH_LONG).show();
 
-                if(privateCarInsuranceList[position] == "Third Party Only"){
+                if (privateCarInsuranceList[position] == "Third Party Only") {
                     startActivity(new Intent(CategoriesPrivateCar.this, ThirdPartyOnlyCompanyA.class));
-                } else if(privateCarInsuranceList[position] == "Third Party Fire and Theft Insurance"){
-                    startActivity(new Intent(CategoriesPrivateCar.this, ThirdPartyFireandTheftCompanyA.class));
-                }else if(privateCarInsuranceList[position] == "Comprehensive Insurance"){
+                } else if (privateCarInsuranceList[position] == "Comprehensive Insurance") {
                     startActivity(new Intent(CategoriesPrivateCar.this, ComprehensiveInsuranceComapnyA.class));
                 }
             }

@@ -4,12 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="mng.r.lydia.insuranceapp.PrivateInsurance">
-<ExpandableListView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/expanded_menu"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentTop="true">
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/expanded_menu"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
 
-</ExpandableListView>
+    </ExpandableListView>
 </RelativeLayout>
